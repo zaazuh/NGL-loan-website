@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about-us-LIAM</title>
+  <!-- styling for navbar-->
+  <link rel="stylesheet" href="navbar.css">
+  <!-- for icon in navbar-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- TESTIMONIALS LINK -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- styling for About Page-->
+  <link rel="stylesheet" href="about-us-LIAM.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<header>
+  <nav>
+    <!-- ADD THIS WHEN LOGO BECOMES IMAGE (so that you can remove the home page in the navbar and replace with forgotten link since it will be difficult to add another menu item and maintain the styling) 
+      <a href="index.html" class="navbar__brand">
+        <img src="/logo.png" alt="site logo" /></a>
+      -->
+    <input type="checkbox" id="check"> <!-- makes it openable-->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">New Growth Loans</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="loan-products.html">Loans</a></li>
+      <li><a href="loan-application.html">Apply</a></li>
+      <li><a class="active" href="about-us-LIAM.html">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+  <!-- banner -->
+  <div class='values-head section__padding'>
+    <div class='container'>
+      <div class='values-head__content text__center'>
+        <div class="values-head__font">
+          <h3 class='para__text text__blue text__upper'>Our Values</h3>
+          <h1 class='section__title'>Committed to excellent service.</h1>
+          <p class="para__text">We have a vision: to help many other people to be even more successful. This is what we
+            effectively work for every day.</p>
+        </div>
+        <button
+          style="background: linear-gradient(to right, hsl(180, 50%, 99%), hsl(170, 100%,40%)); border-radius: 15px;">Read
+          More</button>
+
+      </div>
+    </div>
+    <!-- Values-Cards -->
+    <div class="values-cards section__padding">
+      <div class="values-cards-container">
+        <div class="card-container">
+          <!-- first card -->
+          <div class="card">
+            <!-- profile image - not needed -->
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="images/icons/Respect.jpg" alt="wedding loan icon" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="card__title">Respect</h2>
+              <p class="card__description">A feeling of deep administration for someone or something elicited by their
+                abilities, qualities or achievements .</p>
+              <!-- <p class="link para__text text__center">More info</p> -->
+              <!-- <button class="button">More info</button> -->
+            </div>
+          </div>
+
+          <!-- second card -->
+          <div class="card">
+            <!-- profile image - not needed -->
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="images/icons/Honesty.jpg" alt="medical loan icon" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="card__title">Honesty</h2>
+              <p class="card__description">A character that conotes positive attributes such as integrity, truthfulness
+                and straightfowardness.</p>
+              <!-- <p class="link para__text text__center">More info</p> -->
+              <!-- <button class="button">More info</button> -->
+            </div>
+          </div>
+
+
+          <!-- third card -->
+          <div class="card">
+            <!-- profile image - not needed -->
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="images/icons/Transparency.jpg" alt="travel loan icon" class="card-img">
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h2 class="card__title">Transparency</h2>
+              <p class="card__description">Being transparent is to be open, honest and straightfoward about various
+                company operations..</p>
+              <!-- <p class="link para__text text__center">More info</p> -->
+              <!-- <button class="button">More info</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- History -->
+  <div class="history bg__dark-teal section__padding">
+    <div class="container">
+      <div class="history__content text__center">
+        <h2 class='section__title text__blue'>Our History</h2>
+        <div class="history__inner">
+          <div class="history__image">
+            <img src="images/NewGrowthLoans.jpg">
+          </div>
+          <div class="history-text">
+            <p class="history-para para__text">ZLK is a proud South African business, established in 2012 to support all
+              south Africans despite their
+              sistuaution.
+              Our loans include educational loans, vehicle repairs and purchase, medical expenses and many more loans
+              satisfying South Africans needs.</p>
+            <br/>
+            <p class="history-para para__text">ZLK has been very successful and had a huge impact on the financial service
+              sector. We promote
+              responsibility, accountability and emphasize the importance of responsible
+              lending and borrowing which ultimately complies with the National Credit Act. When handling our customers we
+              look to educate and strengthen our Nation
+              so that it may reach out to all. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--TimeLine-->
+  <section class="timeline">
+
+    <h1>Responsive Timeline</h1>
+
+    <ul>
+      <li>
+        <div class="content">
+          <h2>
+            <time>2016</time>
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias debitis praesentium itaque veniam dolorum
+            cupiditate asperiores optio beatae, qui perferendis ipsam odit modi nemo natus corrupti neque quos
+            distinctio facilis?</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h2>
+            <time>2015</time>
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quas, reiciendis quis sequi
+            voluptatem consectetur adipisci accusamus hic vel vero ea ad iure! Natus, ipsum, enim aspernatur fugit
+            voluptatibus similique?</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h2>
+            <time>2012</time>
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, expedita. Dolorem blanditiis,
+            delectus omnis eos accusamus mollitia et cupiditate officia maxime vel, nesciunt alias eius, quibusdam in
+            ea eveniet ut!</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h2>
+            <time>2010</time>
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis voluptas voluptatum dolorum,
+            quibusdam dignissimos animi pariatur laboriosam quis explicabo similique aperiam debitis quam velit quod,
+            reprehenderit harum ratione. Iste, unde?</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h2>
+            <time>2008</time>
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet inventore odit placeat in laboriosam
+            dolore ducimus vero, sapiente ipsam veritatis, numquam libero itaque dolores natus ex aliquam nam nihil
+            cumque.</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h2>
+            <time>2007</time>
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sequi nobis, blanditiis quae dolorem quasi
+            reiciendis odio qui fugit? Officiis quos aspernatur mollitia dolorum pariatur repellendus quaerat dolorem
+            magnam quo.</p>
+        </div>
+      </li>
+      <li>
+        <div class="content">
+          <h2>
+            <time>2004</time>
+          </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel corporis sunt nostrum velit quibusdam neque
+            porro ratione quos dolor libero. Tempore consequatur natus nostrum delectus provident fugiat corporis
+            error ipsa.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="TimeLine.js"></script>
+
+  <div id="testimonials-placeholder"></div>
+  <script>
+    $.get("about-us.html", function (data) {
+      $("#testimonials-placeholder").replaceWith(data);
+    }).fail(function (xhr, status, error) {
+      console.error("Error loading footer:", error);
+    });
+  </script>
+  </div>
+
+
+
+
+
+
+
+  <!--Start of Testimonials-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.40/css/all.min.css">
+  <link rel="stylesheet" href="css/slider.css">
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="sec-header">
+        <h2 class="title">What do our customers have to say about New Growth Loans?</h2>
+      </div>
+      <div class="swiper testimonials-content">
+        <div class="swiper testimonials-slider js-testimonials-slider">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="silly">
+                  <img src="/images/ImgTestimonials/Calvin.jpg" alt="img" class="silly-img">
+                </div>
+                <div class="text-box">
+                  <h3 class="name">Calvin Stevens</h3>
+                </div>
+                <p>"ZLK Loans has helped me to better my understanding of loans, what to do before making a loan and the
+                  importance of responsibility. "
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="silly">
+                  <img src="/images/ImgTestimonials/Adam.jpg" alt="img" class="silly-img">
+                </div>
+                <div class="text-box">
+                  <h3 class="name">Adam Phillips</h3>
+                </div>
+
+                <p>"Before i never trusted loan companies,because I always thought that most of them just wanted me to
+                  suffer so that they can get more. However, thanks to ZLK I am able to understand just how important a
+                  credit score is."
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="silly">
+                  <img src="/images/ImgTestimonials/Ingrid.jpg" alt="img" class="silly-img">
+                </div>
+                <div class="text-box">
+                  <h3 class="name">Ingrid Phillips</h3>
+                </div>
+
+                <p>"I needed to make a loan for a vehicle repair urgently, to get to work and get my kids to school.
+                  Thanks to ZLK's fast support system my car was fixed the very next day."</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="silly">
+                  <img src="/images/ImgTestimonials/Kim.jpg" alt="img" class="silly-img">
+                </div>
+                <div class="text-box">
+                  <h3 class="name">Kim Russel</h3>
+                </div>
+                <p>
+                  "I would like to say thank you to the staff for their committment to fully supporting me and giving me
+                  the loan as soon as possible. The staff are well organised and well spoken, their responses are fast
+                  and clear."
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="silly">
+                  <img src="/images/ImgTestimonials/Enver.jpg" alt="img" class="silly-img">
+                </div>
+                <div class="text-box">
+                  <h3 class="name">Enver Samuels</h3>
+                </div>
+                <p>"Thanks to ZLK I am aware of the dangers of going to make a loan without any knowledge of what I'm
+                  doing. ZLK has proven that research before doing something is crucial."</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide testimonials-item">
+              <div class="info">
+                <div class="silly">
+                  <img src="/images/ImgTestimonials/Amy.jpg" alt="img" class="silly-img">
+                </div>
+                <div class="text-box">
+                  <h3 class="name">Amy Watson</h3>
+
+                </div>
+                <p>"ZLK is a trustworthy, reliable source in terms of making loans. I would definitely recommend ZLK for
+                  all to use. "</p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js-testimonials-pagination"></div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiper = new Swiper('.js-testimonials-slider', {
+        grabCursor: true,
+        spaceBetween: 30,
+        pagination: {
+          el: '.js-testimonials-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          767: {
+            slidesPerView: 2
+          }
+        }
+      });
+    });
+  </script>
+  <!--End of Testimonials-->
+
+
+  <!--Staff Info-->
+  <div class="staff-info">
+    <h1>Our team</h1>
+
+    <section class="Staff">
+      <div class="board">
+        <div class="bg-image">
+          <img src="Staff/bg-image.jpg" alt="">
+        </div>
+        <div class="pic">
+          <img src="/images/Staff/Kieron.jpeg" alt="">
+        </div>
+        <div class="information">
+          <h3>Kieron Swartz</h3>
+          <span><i class="fas fa-code"></i>IT and Technical Support</span>
+          <p>
+            Kieron Swartz is the IT and Technical Support, this is the process whereby IT professionals maintain the
+            website's functionality, security, and performance. They also provide technical support to staff members and
+            customers experiencing issues with the online loan application process or website navigation.
+            Kieron Swartz has 20 years of experience within the IT and Technical Support. Any issues related to
+            functionality,security or performance is handled by Kieron Swartz
+            who is an expert in his field.</p>
+          <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <div class="bg-image">
+          <img src="Staff/bg-image.jpg" alt="">
+        </div>
+        <div class="pic">
+          <img src="/images/Staff/Liam.jfif" alt="">
+        </div>
+        <div class="information">
+          <h3>Liam Marco</h3>
+          <span><i class="fas fa-code"></i>Credit Analyst</span>
+          <p>
+            Liam Marco is the Credit Analyst which is someone who evaluates the creditworthiness of loan applicants by
+            analyzing their credit reports, income statements, and other financial information to assess their ability
+            to repay the loan.
+            Liam Marco has been with ZLK since 2013 and has helped educate and improve many customers knowledge on how
+            to loan and borrow responsibly. Prior to working for ZLK, Liam Marco worked for FNB as a Credit Analyst as
+            well.
+          </p>
+          <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <div class="bg-image">
+          <img src="Staff/bg-image.jpg" alt="">
+        </div>
+        <div class="pic">
+          <img src="/images/Staff/pp.jpeg" alt="">
+        </div>
+        <div class="information">
+          <h3>Zahraa Osman</h3>
+          <span><i class="fas fa-code"></i>IT and Technical Support</span>
+          <p>
+            Zahraa Osman is ZLK's Management and Administration, she supports the Executives, managers, and
+            administrative staff oversee the overall operations of the loan website, set strategic goals, manage
+            budgets, and ensure smooth day-to-day functioning. Zahraa Osman is one of the founding members who helped
+            established ZLK and helped
+            ZLK get to the level that it is. Zahraa has 16 years of experience within the Management and administrative
+            industry supporting many big companies such as FNB,Standard Bank and other companies.
+          </p>
+          <div class="icons">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-github"></a>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+  </div>
+  <!--End of staff info-->
+
+</body>
+
+</html>

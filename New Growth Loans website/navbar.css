@@ -1,0 +1,230 @@
+  /* NAVIGATION CSS */
+
+ :root {
+    --font-base: 'Poppins', sans-serif;
+    --robin-blue-color: #10c9c3;
+    --hover-color: #087a77;
+    --black-color: #141414;
+    --grey-color: #8e8e8e;
+    --white-color: #fff;
+    /* hex codes from ppt */
+    --dark-color: #2C3333;
+    --green-color: #2E4F4F;
+    --teal-color: #0E8388;
+    --light-color: #CBE4DE;
+    --dark-teal: #0a5e64;
+    --transition: all 300ms ease-in-out;
+  }
+
+  nav{
+    /* position: fixed; */
+    background: var(--robin-blue-color);
+    height: 80px;
+    width: 100%;
+    /* transition: all 0.5s; */
+  }
+
+  .header-scrolled {
+    background: var(--robin-blue-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  /* below is styling for TEXT version of logo */
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px; /* changed from 100px once i added line spacing */
+    padding: 0 80px;
+    font-weight: bold;
+  }
+  /* below is styling for transparent IMAGE of logo */
+
+  .navbar__brand {
+    color: #fff;
+    margin-right: auto;
+    width: 260px;
+    padding-top: 200px;
+  }
+
+  .navbar__brand img {
+    /* margin: 4rem auto 0 auto; */
+    color: #fff;
+    margin-right: auto;
+    width: 260px;
+    padding-top: -200px;
+    /* position: relative;
+    right: 300px; */
+  }
+
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    letter-spacing: 1px; /* ADDED */
+
+    
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+    /* position: relative;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    padding: 0 10px;
+    margin-right: 30px; */
+  }
+  
+  nav a.active,a:hover{
+    background: var(--dark-teal);
+    transition: .5s;
+  }
+
+
+/* Style 2: */
+/* On Hover: Top and left border of after element and right, bottom borders of before element is */
+/* incresed from 0 to 10px */
+
+/* nav .a:after,
+nav .a:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease;
+}
+
+nav .a:after {
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+nav .li:before {
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+nav .li:hover::before,
+nav .li:hover::after {
+  width: 10px;
+  height: 10px;
+  border-color: var(--dark-teal);
+} */
+
+
+
+/* TAKEN FROM INDEX CSS */
+
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  
+/* ADDED THIS */
+@media (max-width: 1116px){
+    
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+    position: absolute; /* NEW!! MAKES IT IN LINE but it is conflicitng wiht logo */
+  }
+ 
+  nav ul li a{ /* THIS IS WHERE ITEMS ARE AFFECTED */
+    font-size: 16px;
+    padding: 7px 13px; /* copied from OG - can readjust this? */
+  }
+}
+
+@media (max-width: 952px){
+
+  label.logo {
+    padding-left: 20px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row; /* !! fixed items !! */
+    align-items: center;
+    margin: 0;
+  }
+  nav ul li {
+    margin: 0px 5px; /* !! fixed items !! */
+  }
+  nav ul li a {
+    padding: 5px 10px;
+  }
+}
+
+  @media (max-width: 858px){ /* MINI MENU - WORKS */
+    .checkbtn{
+      display: block;
+    }
+    label.logo {
+      padding-left: 50px;
+    }
+    /* ADDED when trying to fix mini nav scroll issue */
+    nav{
+      position: relative;
+      background: var(--robin-blue-color);
+    }
+
+    ul{
+      position: absolute; /* ensures the black box takes up the screen */
+      width: 100%;
+      /* height: 100vh; */
+      height: 500vh;
+      background:rgb(0, 0, 0);
+      top: 80px; /* how much of the screen the black box takes */
+      left: 100%; /* -100 makes it left aligned */
+      text-align: center;
+      transition: all .5s;
+      z-index: 1;
+    }
+    nav ul{ /* had to create this despite mini menu not having a nav, because most recent nav ul styling was being applied */
+      flex-direction: column; /* ADDED */
+      margin: 0;
+    }
+    nav ul li{
+      display: block;
+      margin: 25px 0; /* CHANGED from 50px */
+      line-height: 30px; /* controls the item box size */
+    }
+    nav ul li a{
+      font-size: 20px;
+      padding: 7px 13px; /* ADDED */
+    }
+    a:hover,a.active{
+      background: none;
+      color: var(--hover-color);
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }

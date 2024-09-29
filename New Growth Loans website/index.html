@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Growth Loans | Home</title>
+  <!-- styling for rest of page-->
+  <link rel="stylesheet" href="index.css">
+  <!-- styling for navbar-->
+  <link rel="stylesheet" href="navbar-index.css">
+  <!-- for icon in navbar-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- CSS for chatbot -->
+  <link rel="stylesheet" href="static/css/chat.css">
+  <link rel="stylesheet" href="static/css/home.css">
+  <!-- icon kit link-->
+  <script src="https://kit.fontawesome.com/60bf347154.js" crossorigin="anonymous"></script>
+</head>
+
+<header>
+  <nav>
+    <input type="checkbox" id="check"> <!-- makes it openable-->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">New Growth Loans</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="loan-products.html">Loans</a></li>
+      <li><a href="loan-application.html">Apply</a></li>
+      <li><a href="about-us-LIAM.html">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+    <!-- ADD THIS WHEN LOGO BECOMES IMAGE (so that you can remove the home page in the navbar and replace with forgotten link since it will be difficult to add another menu item and maintain the styling) -->
+    
+      
+  </nav>
+
+  <div class="header"
+    style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(/images/indexheader1.jpg) center/cover no-repeat;">
+
+    <!--     <div class="indexheader2">
+      <img src="/images/indexheader2.jpg" alt="Index Header Background"/>
+    </div> -->
+
+    <div class="container" id="nabeel"> <!-- for text part of header -->
+      <div class="header__content text__center text__light flex flex__center">
+        <div class="header__content--left"></div>
+        <div class="header__content--right">
+          <h1 class="header__title fw__6">A New Lease on Life</h1>
+          <p class="para__text">Whether your loan is for your dream wedding, your dream vacation, the new kitchen you
+            have been dreaming about renovating, or perhaps you have a medical emergency, New Growth Loans offers you a
+            new start. With flexible terms and rates tailored to your needs, New Growth Loans has you covered.</p>
+          <a href="loan-application.html" class="btn btn__blue">Apply</a>
+          <!-- <a href="loan-application.html" class="orange-btn">Apply</a> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      
+
+    </div>
+
+    <script>
+      const headerEl = document.querySelector('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          headerEl.classList.add('header-scrolled');
+        }else if (window.scrollY <= 50) {
+          headerEl.classList.remove('header-scrolled');
+        }
+      });
+    </script>
+</header>
+
+<body>
+
+  <div class='logo bg__dark-teal'>
+    <div class='container'>
+      <div class='intro__content text__center'>
+        <img src='/images/logotransparent.png' alt='site logo'/>
+      </div>
+    </div>
+  </div>
+
+  <div class='intro section__padding'>
+    <div class='container'>
+      <div class='intro__content text__center'>
+        <h2 class='section__title'>Our Mission</h2>
+        <p class='para__text text__grey'>At New Growth Loans, we're dedicated to unlocking financial opportunities for
+          individuals through personalized loan solutions and exceptional service. Our mission is to offer a new start,
+          empowering our clients to pursue their goals and embrace a brighter future.</p>
+        <!-- <img src='/logotransparent.png' alt='site logo'/> -->
+      </div>
+    </div>
+  </div>
+
+  <div class='intro bg__dark-teal section__padding'>
+    <div class='container'>
+      <div class='intro__content text__center'>
+        <h2 class='section__title text__cap'>Our Vision</h2>
+        <p class='para__text text__light'>New Growth Loans envisions a future where financial barriers are overcome, and
+          dreams are realized. We aspire to be the catalyst for positive change, giving individuals the opportunity to
+          reclaim their futures and shape their destinies without limitations.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="key-offer section__padding">
+    <div class="key-container">
+      <div class='key-offer__content text__center'>
+        <h2 class='section__title'>Key Offerings</h2>
+ 
+        <div class="card-container">
+          <!-- first card -->
+          <!-- <a href="/loan-products.html" class="card-link"> -->
+            <div class="card">
+              <!-- profile image - not needed -->
+              <div class="image-content">
+                <span class="overlay"></span>
+ 
+                <div class="card-image">
+                  <img src="images/icons/wedding.png" alt="wedding loan icon" class="card-img">
+                  <!-- <img src="images/icons/wedding.png" alt="wedding loan icon hover" class="card-img-hover"> -->
+                </div>
+               
+              </div>
+ 
+              <div class="card-content">
+                <h2 class="card__title">Wedding loan</h2>
+                <p class="card__description">Turn your dream wedding into reality with our flexible financing options.</p>
+                <!-- <p class="link para__text text__center">More info</p> -->
+                <!-- <button class="button">More info</button> -->
+              </div>
+ 
+              <div class="bottom-content">
+                <img src="images/icons/arrowTHIN.png" alt="arrow icon" class="arrow-icon">
+                <img src="images/icons/arrowTHIN-teal.png" alt="arrow icon" class="arrow-icon-hover">
+              </div>
+ 
+            </div>
+          </a>
+ 
+          <!-- second card -->
+          <!-- <a href="/loan-products.html" class="card-link"> -->
+            <div class="card">
+              <!-- profile image - not needed -->
+              <div class="image-content">
+                <span class="overlay"></span>
+ 
+                <div class="card-image">
+                  <img src="images/icons/medical3.png" alt="medical loan icon" class="card-img">
+                </div>
+              </div>
+ 
+              <div class="card-content">
+                <h2 class="card__title">Medical emergency loan</h2>
+                <p class="card__description">Relieve yourself of the burden of dealing with an unexpected medical
+                  emergency.</p>
+                <!-- <p class="link para__text text__center">More info</p> -->
+                <!-- <button class="button">More info</button> -->
+              </div>
+ 
+              <div class="bottom-content">
+                <img src="images/icons/arrowTHIN.png" alt="arrow icon" class="arrow-icon">
+                <img src="images/icons/arrowTHIN-teal.png" alt="arrow icon" class="arrow-icon-hover">
+              </div>
+ 
+            </div>
+          </a>
+ 
+ 
+          <!-- third card -->
+          <!-- <a href="/loan-products.html" class="card-link"> -->
+            <div class="card">
+              <!-- profile image - not needed -->
+              <div class="image-content">
+                <span class="overlay"></span>
+ 
+                <div class="card-image">
+                  <img src="images/icons/travel.png" alt="travel loan icon" class="card-img">
+                </div>
+              </div>
+ 
+              <div class="card-content">
+                <h2 class="card__title">Travel and leisure</h2>
+                <p class="card__description">Enjoy your dream vacation or explore new adventures with our flexible
+                  leisure
+                  loan options.</p>
+                <!-- <p class="link para__text text__center">More info</p> -->
+                <!-- <button class="button">More info</button> -->
+              </div>
+ 
+              <div class="bottom-content">
+                <img src="images/icons/arrowTHIN.png" alt="arrow icon" class="arrow-icon">
+                <img src="images/icons/arrowTHIN-teal.png" alt="arrow icon" class="arrow-icon-hover">
+              </div>
+ 
+            </div>
+          </a>
+ 
+          <!-- fourth card -->
+          <!-- <a href="/loan-products.html" class="card-link"> -->
+            <div class="card">
+              <!-- profile image - not needed -->
+              <div class="image-content">
+                <span class="overlay"></span>
+ 
+                <div class="card-image">
+                  <img src="images/icons/vehicle.png" alt="vehicle repair loan icon" class="card-img">
+                </div>
+              </div>
+ 
+              <div class="card-content">
+                <h2 class="card__title">Vehicle repair loan</h2>
+                <p class="card__description">Ensure your vehicle stays on the road with coverage for all types of repairs and maintenance.</p>
+                <!-- <p class="link para__text text__center">More info</p> -->
+                <!-- <button class="button">More info</button> -->
+              </div>
+ 
+              <div class="bottom-content">
+                <img src="images/icons/arrowTHIN.png" alt="arrow icon" class="arrow-icon">
+                <img src="images/icons/arrowTHIN-teal.png" alt="arrow icon" class="arrow-icon-hover">
+              </div>
+ 
+            </div>
+          </a>
+ 
+        </div>
+ 
+      </div>
+      <div class="readmore-container">
+      <a class="key-offer-link text__left" href="loan-products.html">Read more</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Benefits of loan -->
+  <div class='benefits bg__dark-teal section__padding'>
+    <div class='container'>
+      <div class="benefits__content text__center">
+        <h2 class='section__title text__blue'>Benefits of a New Growth loan</h2>
+        <div class="benefits__inner">
+          <div class="row">
+            <div class="service">
+              <h2>Speedy Approval Process</h2>
+              <p class='para__text text__light'>Provisional approval in minutes, with funds deposited into your
+                account within 24 hours upon approval.</p>
+            </div>
+            <div class="service">
+              <h2>Flexible Repayment Terms</h2>
+              <p class='para__text text__light'>Tailored repayment options spanning from 12 to 84 months, ensuring
+                affordability and flexibility.</p>
+            </div>
+            
+            <div class="service">
+              <h2>Competitive Interest Rates</h2>
+              <p class='para__text text__light'>Enjoy our interest rates at 18%, fixed for the duration of your
+                loan term, providing stability and predictability.</p>
+            </div>
+            
+            <div class="service">
+              <h2>Transparent Loan Terms</h2>
+              <p class='para__text text__light'>Know exactly what you're getting with our straightforward loan
+                agreements, ensuring transparency and peace of mind.</p>
+            </div>
+          </div>
+          <div class="benefits__image">
+            <img src="/images/coinsjar.jpg" alt="benefits-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Steps to Apply (Kevin Powell) -->
+
+<div class="stats bg__whitesmoke section__padding">
+  <div class="container">
+    <h2 class='section__title'>Steps to Apply</h2>
+      <div class="stats__content grid">
+          <div class="stats__item text__dark text__center">
+        
+            <span class="description fw__6">Be over 18 and ensure that you have a bank statement and proof of identification ready.</span>
+            <!-- <span class="value text__upper fw__5 ls__2">Step 1</span> -->
+            </div>
+
+          <div class="stats__item text__dark text__center">
+            <span class="description fw__6">Apply in person or online. New Growth Loans will run quick affordability checks before we can offer you the amount that you've requested, and we will adjust it to suit your needs.</span>
+            <!-- <span class="value text__upper fw__5 ls__2">Step 2</span> -->
+          </div>
+
+          <div class="stats__item text__dark text__center">
+            <span class="description fw__6">Wait for our response - it comes quickly! If your loan is approved, New Growth Loans will pay the money directly into your account or ask you to send any additional documents that we might need.</span>
+            <!-- <span class="value text__upper fw__5 ls__2">Step 3</span> -->
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- Steps to Apply -->
+
+    <!-- PUT BACK AFTER DEMO <div class="steps section padding">
+      <div class="container">
+        <div class="steps__content text__center">
+          <h2 class="section__title">Steps to Apply</h2>
+          <div class="steps__inner">
+            <div class="row nbd-step-container">
+              <div class="nbd-circle-step">
+                  <h5 class="nbd-circle-step-text">Step 1</h5>
+              </div>
+              <div class="nbd-circle-step-connector"></div>
+              <div class="nbd-circle-step">
+                  <h5 class="nbd-circle-step-text">Step 2</h5>
+              </div>
+              <div class="nbd-circle-step-connector"></div>
+              <div class="nbd-circle-step">
+                  <h5 class="nbd-circle-step-text">Step 3</h5>
+              </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Footer -->
+
+    <div class="div-1"> <!-- footer container -->
+      <div class="div-2"> <!-- everything inside container -->
+        <div class="div-3"> <!-- content -->
+          <div class="div-4"> <!-- social media links and pages -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <div class="div-5"> <!-- social media links -->
+              <a href="https://www.facebook.com//New Growth Loans"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com//new.growthloans"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=27817363783"><i class="fa-brands fa-whatsapp"></i></a>
+
+            </div>
+            <div class="div-6"> <!-- pages -->
+              <div class="div-7">
+                <a href="about-us-LIAM.html">About Us</a>
+              </div>
+              <div class="div-8">
+                <a href="loan-products.html">Loan Products</a>
+              </div>
+              <div class="div-9">
+                <a href="loan-application.html">Loan Application</a>
+              </div>
+              <div class="div-11">
+                <a href="https://drive.google.com/file/d/1NgT4VU3VxsNv8e9iT3G5h6OnB71w2WWe/view?usp=sharing">Terms and Conditions</a>
+              </div>
+            </div>
+            <div class="div-12">
+              <a href="contact-us.html" class="btn">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="div-13"></div>
+        <div class="div-14">© 2024 All Rights Reserved</div>
+      </div>
+    </div>
+
+  <!-- Chatbot section -->
+  <div class="chat-bar-collapsible">
+    
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible">Chat with us! 
+          <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+      </button>
+  
+  <div class="content">
+      <div class="full-chat-block">
+         <!--MESSAGE CONTAINER-->
+          <div class="outer-container">
+              <div class="chat-container">
+                 <!--MESSAGES-->
+                 <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                 <div class="chatbox">
+                    <h5 id="chat-timestamp"></h5>
+                 </div>
+                 <div id="chatbox" class="chatbox"></div>
+                 <div id="chat-bar-bottom" class="chat-bar-bottom"></div>
+              
+                 <!--User Input Box-->
+                 <div class="chat-bar-input-box">
+                    <div class="userInput">
+                         <input id="textInput" class="input-box" type="text" name="msg"
+                         placeholder="Tap 'Enter' to send message">
+                         <p></p>
+                    </div>
+
+                    <div class="chat-bar-icons">
+                      <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                      onclick="heartButton()"></i>
+                      <i id="chat-icon" style="color: #f8f6f6;" class="fa fa-fw fa-send"
+                      onclick="sendButton()"></i>
+                    </div>
+                 </div>
+                  
+                 <div class="chat-bar-bottom">
+                  <p></p>
+                 </div>
+
+              </div>
+          </div>
+
+      
+       
+
+      </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  <!-- JavaScript files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="static/scripts/chat.js"></script>
+  <script src="static/scripts/responses.js"></script>
+
+</body>
+
+</html>

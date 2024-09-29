@@ -1,0 +1,98 @@
+.navbar {
+    padding: 3.8rem 0;
+    /* flex-wrap: nowrap; Prevent items from wrapping onto multiple lines */
+}
+
+/* new code to make sure every menu item is in line */
+
+/* Adjust spacing between navbar items - pushes to the left */
+/* .navbar .nav__item {
+    margin-right: 20px;
+} */
+
+/* Prevent text from wrapping onto multiple lines */
+.navbar .nav__link {
+    white-space: nowrap;
+}
+
+/* end of new code */
+
+.navbar__brand img {
+    width: 150px;
+}
+.brand__and__toggler {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.navbar__collapse {
+    display: none;
+}
+.navbar__collapse .nav__link { /* targets elements with the class nav__link (within class: navbar__collapse)*/
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+.navbar__collapse .nav__link:hover,
+.navbar .nav__link { /* 'hover' is a pseudo-class */
+    color: var(--robin-blue-color);
+}
+
+/* smallscreen */
+.navbar__smallscreen {
+    position: fixed; /* makes it full screen */
+    right: 0;
+    top: 0;
+    background-color: var(--robin-blue-color);
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+    box-shadow: -3px 0 14px 0 rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    transition: var(--transition); /* gives transition to navbar showing up/becoming a smallscreen*/
+}
+.navbar__close--btn {
+    position: absolute; /* moves x button out of navbar menu list and places it on its own (to the right) */
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.navbar__close--btn:hover {
+    opacity: 0.9;
+}
+.navbar__smallscreen .nav__link { /* transtion on each of the links - smooth movement */
+    transition: var(--transition);
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+}
+.navbar__smallscreen .nav__link:hover { /* makes it move to the left (transition occurs)*/
+    padding-left: 1rem;
+}
+.navbar__smallscreen .nav__item { /* spacing between each link ? or specifiying margin of box/item*/ 
+    margin: 2rem 0;
+}
+
+@media (min-width: 578px) {
+    .navbar__smallscreen { /* specifies size of navbar when media/screen/header-bg is medium sized? */
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) { /* instructs hamburger menu icon to not show up when the screen is big*/
+    .navbar__open--btn {
+        display: none;
+    }
+    .navbar__collapse {
+        display: flex;
+    }
+    .navbar__collapse .navbar__nav {
+        display: flex;
+        align-items: center;
+    }
+    .navbar__collapse .nav__item {
+        margin-left: 3.8rem;
+    }
+    .navbar__smallscreen {
+        display: none;
+    }
+}

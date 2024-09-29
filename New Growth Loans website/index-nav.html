@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Growth Loans | Home</title>
+  <!-- styling for rest of page-->
+  <link rel="stylesheet" href="index.css">
+  <!-- styling for navbar-->
+  <link rel="stylesheet" href="index-nav.css">
+  <!-- for icon in navbar-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- icon kit link-->
+  <script src="https://kit.fontawesome.com/60bf347154.js" crossorigin="anonymous"></script>
+</head>
+
+<nav class="navbar">
+    <div class="container flex">
+        <div class="brand__and__toggler flex">
+            <a href="/" class="navbar__brand">
+                <img src="images/logo.png" alt="site logo" />
+            </a>
+            <button type="button" class="navbar__open--btn text__light" onclick="toggleMenu()">
+                <!-- "button" type is specified to prevent the button from submitting a form -->
+                <!-- className for an open navbar AND light text - underscores for spaces & double dashes to indicate modifiers or variations-->
+                <!-- ^^ when the button is clicked, it sets the toggleMenu state variable to true, which opens a menu (event handler attached to the button's click event) -->
+                <span class="fa-bars" style="font-size: 26px;"></span> <!-- referencing the FaBars icon and using it as a button w a specified size -->
+            </button>
+        </div>
+
+        <!-- be careful of the type of double quotation marks you use -->
+        <div class="navbar__collapse">
+            <ul class="navbar__nav">
+                <li class="nav__item">
+                    <a href="/" class="nav__link text__upper fw__6 text__light nav__active">home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/loan-products" class="nav__link text__upper fw__6 text__light">loan products</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/loan-application" class="nav__link text__upper fw__6 text__light">Loan Application</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/about-us" class="nav__link text__upper fw__6 text__light">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/contact-us" class="nav__link text__upper fw__6 text__light">contact us</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar__smallscreen" style="display: none;">
+            <button type="button" class="navbar__close--btn text__light" onclick="toggleMenu()">
+                <span class="fa-times" style="font-size: 32px;"></span>
+            </button>
+            <ul class="navbar__nav--smallscreen text__light">
+                <li class="nav__item">
+                    <a href="/" class="nav__link text__upper fw__6 text__light nav__active">home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/loan-products" class="nav__link text__upper fw__6 text__light">loan products</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/loan-application" class="nav__link text__upper fw__6 text__light">Loan Application</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/about-us" class="nav__link text__upper fw__6 text__light">About Us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/contact-us" class="nav__link text__upper fw__6 text__light">contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        var navbarSmallscreen = document.querySelector('.navbar__smallscreen');
+        if (navbarSmallscreen.style.display === 'none') {
+            navbarSmallscreen.style.display = 'block';
+        } else {
+            navbarSmallscreen.style.display = 'none';
+        }
+    }
+</script>
+
+
+<body>
+
+  <div class='logo bg__dark-teal'>
+    <div class='container'>
+      <div class='intro__content text__center'>
+        <img src='/images/logotransparent.png' alt='site logo'/>
+      </div>
+    </div>
+  </div>
+
+  <div class='intro section__padding'>
+    <div class='container'>
+      <div class='intro__content text__center'>
+        <h2 class='section__title'>Our Mission</h2>
+        <p class='para__text text__grey'>At New Growth Loans, we're dedicated to unlocking financial opportunities for
+          individuals through personalized loan solutions and exceptional service. Our mission is to offer a new start,
+          empowering our clients to pursue their goals and embrace a brighter future.</p>
+        <!-- <img src='/logotransparent.png' alt='site logo'/> -->
+      </div>
+    </div>
+  </div>
+
+  <div class='intro bg__dark-teal section__padding'>
+    <div class='container'>
+      <div class='intro__content text__center'>
+        <h2 class='section__title text__cap'>Our Vision</h2>
+        <p class='para__text text__light'>New Growth Loans envisions a future where financial barriers are overcome, and
+          dreams are realized. We aspire to be the catalyst for positive change, giving individuals the opportunity to
+          reclaim their futures and shape their destinies without limitations.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="key-offer section__padding">
+    <div class="key-container">
+      <div class='key-offer__content text__center'>
+        <h2 class='section__title'>Key Offerings</h2>
+
+        <div class="card-container">
+          <!-- first card -->
+          <a href="/loan-products.html" class="card-link">
+            <div class="card">
+              <!-- profile image - not needed -->
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/icons/wedding.png" alt="wedding loan icon" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="card__title">Leisure loan</h2>
+                <p class="card__description">Enjoy your dream vacation or explore new adventures with our flexible
+                  leisure
+                  loan options.</p>
+                <!-- <p class="link para__text text__center">More info</p> -->
+                <!-- <button class="button">More info</button> -->
+              </div>
+
+              <div class="bottom-content">
+                <img src="images/icons/arrowTHIN.png" alt="arrow icon" class="arrow-icon">
+              </div>
+
+            </div>
+          </a>
+
+          <!-- second card -->
+          <a href="/loan-products.html" class="card-link">
+            <div class="card">
+              <!-- profile image - not needed -->
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/icons/medical3.png" alt="medical loan icon" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="card__title">Medical emergency loan</h2>
+                <p class="card__description">Relieve yourself of the burden of dealing with an unexpected medcial
+                  emergency.</p>
+                <!-- <p class="link para__text text__center">More info</p> -->
+                <!-- <button class="button">More info</button> -->
+              </div>
+
+              <div class="bottom-content">
+                <img src="images/icons/arrowTHIN.png" alt="arrow icon" class="arrow-icon">
+              </div>
+
+            </div>
+          </a>
+
+
+          <!-- third card -->
+          <a href="/loan-products.html" class="card-link">
+            <div class="card">
+              <!-- profile image - not needed -->
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/icons/travel.png" alt="travel loan icon" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="card__title">Medical emergency loan</h2>
+                <p class="card__description">Relieve yourself of the burden of dealing with an unexpected medcial
+                  emergency.</p>
+                <!-- <p class="link para__text text__center">More info</p> -->
+                <!-- <button class="button">More info</button> -->
+              </div>
+
+              <div class="bottom-content">
+                <img src="images/icons/arrowTHIN.png" alt="arrow icon" class="arrow-icon">
+              </div>
+
+            </div>
+          </a>
+
+          <!-- fourth card -->
+          <a href="/loan-products.html" class="card-link">
+            <div class="card">
+              <!-- profile image - not needed -->
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="images/icons/vehicle.png" alt="vehicle repair loan icon" class="card-img">
+                </div>
+              </div>
+
+              <div class="card-content">
+                <h2 class="card__title">Medical emergency loan</h2>
+                <p class="card__description">Relieve yourself of the burden of dealing with an unexpected medcial
+                  emergency.</p>
+                <!-- <p class="link para__text text__center">More info</p> -->
+                <!-- <button class="button">More info</button> -->
+              </div>
+
+              <div class="bottom-content">
+                <img src="images/icons/arrowTHIN.png" alt="arrow icon" class="arrow-icon">
+              </div>
+
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+      <a class="key-offer-link text__left" href="loan-products.html">Read more</a>
+    </div>
+  </div>
+
+
+  <!-- Benefits of loan -->
+  <div class='benefits bg__dark-teal section__padding'>
+    <div class='container'>
+      <div class="benefits__content text__center">
+        <h2 class='section__title text__blue'>Benefits of a New Growth loan</h2>
+        <div class="benefits__inner">
+          <div class="row">
+            <div class="service">
+              <h2>Speedy Approval Process</h2>
+              <p class='para__text text__light'>Provisional approval in minutes, with funds deposited into your
+                account within 24 hours upon approval.</p>
+            </div>
+            <div class="service">
+              <h2>Flexible Repayment Terms</h2>
+              <p class='para__text text__light'>Tailored repayment options spanning from 12 to 84 months, ensuring
+                affordability and flexibility.</p>
+            </div>
+            
+            <div class="service">
+              <h2>Competitive Interest Rates</h2>
+              <p class='para__text text__light'>Enjoy our interest rates at 18%, fixed for the duration of your
+                loan term, providing stability and predictability.</p>
+            </div>
+            
+            <div class="service">
+              <h2>Transparent Loan Terms</h2>
+              <p class='para__text text__light'>Know exactly what you're getting with our straightforward loan
+                agreements, ensuring transparency and peace of mind.</p>
+            </div>
+          </div>
+          <div class="benefits__image">
+            <img src="/images/coinsjar.jpg" alt="benefits-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Steps to Apply (Kevin Powell) -->
+
+<div class="stats bg__whitesmoke section__padding">
+  <div class="container">
+      <div class="stats__content grid">
+          <div class="stats__item text__dark text__center">
+            <span class="description fw__6">Gather documents and ensure you are prepared. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nostrum autem sint cumque eius incidunt, quas aut culpa veniam harum...</span>
+            <!-- <span class="value text__upper fw__5 ls__2">Step 1</span> -->
+          </div>
+
+          <div class="stats__item text__dark text__center">
+            <span class="description fw__6">Apply in person or online. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nostrum autem sint cumque eius incidunt, quas aut culpa veniam harum...</span>
+            <!-- <span class="value text__upper fw__5 ls__2">Step 2</span> -->
+          </div>
+
+          <div class="stats__item text__dark text__center">
+            <span class="description fw__6">Wait for our response. It comes quick. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum nostrum autem sint cumque eius incidunt, quas aut culpa veniam harum...</span>
+            <!-- <span class="value text__upper fw__5 ls__2">Step 3</span> -->
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- Steps to Apply -->
+
+    <!-- PUT BACK AFTER DEMO <div class="steps section padding">
+      <div class="container">
+        <div class="steps__content text__center">
+          <h2 class="section__title">Steps to Apply</h2>
+          <div class="steps__inner">
+            <div class="row nbd-step-container">
+              <div class="nbd-circle-step">
+                  <h5 class="nbd-circle-step-text">Step 1</h5>
+              </div>
+              <div class="nbd-circle-step-connector"></div>
+              <div class="nbd-circle-step">
+                  <h5 class="nbd-circle-step-text">Step 2</h5>
+              </div>
+              <div class="nbd-circle-step-connector"></div>
+              <div class="nbd-circle-step">
+                  <h5 class="nbd-circle-step-text">Step 3</h5>
+              </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Footer -->
+
+    <div class="div-1"> <!-- footer container -->
+      <div class="div-2"> <!-- everything inside container -->
+        <div class="div-3"> <!-- content -->
+          <div class="div-4"> <!-- social media links and pages -->
+            <div class="div-5"> <!-- social media links -->
+              <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f6584bbefb4b7e5c96c1d01fe04d1fb70aba35efbcfed7ce231f55b31636a71?"
+                class="img" />
+              <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b231d64adf6bbd373b90acd6a25d9031e4925c0e530a753993659c5e9ad0f16e?"
+                class="img" />
+              <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/6cbd2c2bbe4d07f5e66b1a996d5d20fb9805f8b7fbf018d0a2055a348175bdf3?"
+                class="img" />
+              <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/225584da96956a0aad5a5ec1569e05c9ddbe505cb12f75f48146c216b2857c72?"
+                class="img" />
+              <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1caf586c46fe1d5a18ce3333166d3da667f55b90f70c5c5d952a8738d62eac94?"
+                class="img" />
+              <img loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1deb2ea33f181f8443b539931a894f9793a3393721042f27a808eff17a8a891f?"
+                class="img" />
+            </div>
+            <div class="div-6"> <!-- pages -->
+              <div class="div-7">About Us</div>
+              <div class="div-8">Loan Products</div>
+              <div class="div-9">Loan Applications</div>
+              <div class="div-10">FAQ</div>
+              <div class="div-11">Terms and Conditions</div>
+            </div>
+            <div class="div-12">
+              <a href="loan-application.html" class="btn">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="div-13"></div>
+        <div class="div-14">© 2024 All Rights Reserved</div>
+      </div>
+    </div>
+
+</body>
+
+</html>

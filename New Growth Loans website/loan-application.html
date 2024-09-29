@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="loan-application.css">
+    <!-- styling for navbar-->
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+</head>
+
+<header>
+    <nav>
+        <!-- ADD THIS WHEN LOGO BECOMES IMAGE (so that you can remove the home page in the navbar and replace with forgotten link since it will be difficult to add another menu item and maintain the styling) 
+        <a href="index.html" class="navbar__brand">
+          <img src="/logo.png" alt="site logo" /></a>
+        -->
+        <input type="checkbox" id="check"> <!-- makes it openable-->
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">New Growth Loans</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="loan-products.html">Loans</a></li>
+            <li><a class="active" href="loan-application.html">Apply</a></li>
+            <li><a href="about-us-LIAM.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div id="page" class="site">
+        <div class="container">
+
+            <div class="form-box">
+                <div class="progress">
+                    <div class="logo"><a href="/"><span>Apply</span> Now!</a>
+                    </div>
+                    <ul class="progress-steps">
+                        <!-- 1st step -->
+                        <li class="step active">
+                            <span>1</span>
+                            <p>Personal Info<br><span>25 secs to complete</span></p>
+                        </li>
+                        <!-- 2nd step -->
+                        <li class="step">
+                            <span>2</span>
+                            <p>Employment Info<br><span>60 secs to complete</span></p>
+                        </li>
+                        <!-- 3rd step -->
+                        <li class="step">
+                            <span>3</span>
+                            <p>Expenditure<br><span>90 secs to complete</span></p>
+                        </li>
+                        <!-- 4th step -->
+                        <li class="step">
+                            <span>4</span>
+                            <p>Loan Info<br><span>30 secs to complete</span></p>
+                        </li>
+
+                        <!-- 5th step -->
+                        <li class="step">
+                            <span>5</span>
+                            <p>Bank info<br><span>90 secs to complete</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <form id="form">
+
+                    <!-- page 1 of application form -->
+                    <div class="form-one form-step active">
+                        <div class="bg-svg"></div>
+                        <h2>Personal details</h2>
+                        <br>
+                        <!-- Input boxes - Personal Information -->
+                        <div>
+                            <label>Full name</label>
+                            <input type="text" placeholder="e.g. Robert" id="contactName" name="Full name" required>
+                            <small></small>
+                        </div>
+
+                        <!-- TEMPORARY upload docs -->
+
+
+                        <div>
+                            <label>Gender</label>
+                            <select name="Gender" id="gender" required>
+                                <option value="">Please select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- ID input -->
+                        <div>
+                            <label>ID number</label>
+                            <input type="id" placeholder="e.g. 9202204720082" id="IDNumber" name="ID number" required>
+                        </div>
+
+                        <!-- email input -->
+                        <div>
+                            <label>Email address</label>
+                            <input type="email" placeholder="e.g. robertsmith@gmail.com" id="email" name="email"
+                                required>
+                        </div>
+                        <!-- phone input -->
+                        <div>
+                            <label>Phone number</label>
+                            <input type="tel" placeholder="e.g. 0814788892" id="cellNumber" name="cellNumber" required>
+                        </div>
+                        <!-- address input -->
+                        <div>
+                            <label>Home Address</label>
+                            <input type="text" placeholder="e.g. 55 Protea Rd, Claremont, Cape Town" id="address"
+                                name="Address" required>
+                        </div>
+
+                        <!-- TEMPORARY -->
+                        <!-- <div class="balance-btnArea">
+                            <label>Balance</label>
+                            <div class="balance-btn">
+                                <label style="color: #087a77;font-weight: 200;" id="balance-label"></label>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <!-- page 2 of application form -->
+                    <div class="form-two form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Employment details</h2>
+                        <br>
+                        <!-- employer input -->
+                        <div>
+                            <label>Company of Employment</label>
+                            <input type="text" placeholder="e.g. Red Panda Software" id="company" name="Company"
+                                required>
+                        </div>
+                        <!-- job title input -->
+                        <div>
+                            <label>Job title</label>
+                            <input type="text" placeholder="e.g. Sales Advisor" id="jobTitle" name="Job title" required>
+                        </div>
+                        <!-- gross income input -->
+                        <div class="gross-income-box">
+                            <label>Gross income (R)</label>
+                            <input id="gross-income-input" type="number" placeholder="e.g. 120000"
+                                name="Gross income input" required>
+                        </div>
+                        <!-- company address input -->
+                        <div>
+                            <label>Company Address</label>
+                            <input type="text"
+                                placeholder="e.g. 3rd floor redPanda Place Golf Park, Raapenberg Rd, Mowbray, Cape Town"
+                                id="companyAddress" name="Company address" required>
+                        </div>
+                    </div>
+
+                    <!-- page 3 EXPENDITURE of application form -->
+                    <div class="form-three form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Monthly Expenditure (R)</h2>
+                        <br>
+                        <!-- expenditure field input -->
+                        <div>
+                            <label>Mortgage/rent</label>
+                            <input id="rent-input" type="number" placeholder="e.g. R7,906" name="Rent input" required>
+                        </div>
+                        <!-- expenditure field input -->
+                        <div>
+                            <label>Electricity</label>
+                            <input id="electricity-input" type="number" placeholder="e.g. R1,700"
+                                name="Electricity input" required>
+                        </div>
+                        <!-- expenditure field input -->
+                        <div>
+                            <label>Water</label>
+                            <input id="water-input" type="number" placeholder="e.g. R10,767" name="Water input"
+                                required>
+                        </div>
+                        <!-- expenditure field input -->
+                        <div>
+                            <label>TV License</label>
+                            <input id="tv-license-input" type="number" placeholder="e.g. R265" name="TV license input"
+                                required>
+                        </div>
+                        <!-- expenditure field input -->
+                        <div>
+                            <label>Building insurance</label>
+                            <input id="building-insurance-input" type="number" placeholder="e.g. R1,700"
+                                name="Building insurance input" required>
+                        </div>
+
+                        <div class="balance-btnArea">
+                            <label>Balance</label>
+                            <div class="balance-btn">
+                                <label style="color: #087a77;font-weight: 200;" id="balance-label"></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- page 4 of application form -->
+                    <div class="form-four form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Loan information</h2>
+                        <br>
+                        <!-- loan type dropdown -->
+                        <div>
+                            <label>Loan type</label>
+                            <select name="Loan type" id="loan type" required>
+                                <option value="">Please select</option>
+                                <option value="medical emergency">Medical emergency</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="car repair and maintenance">Car repair and maintenance</option>
+                                <option value="travel and leisure">Travel and leisure</option>
+                            </select>
+                        </div>
+                        <!-- loan amount input -->
+                        <div>
+                            <label>Desired loan amount (R)</label>
+                            <input type="number" placeholder="e.g. 20000" min="10000" max="200000" id="loanAmount"
+                                name="Loan amount" required>
+                        </div>
+                        <!-- loan term dropdown -->
+                        <div>
+                            <label>Repayment period</label>
+                            <select name="Repayment period" id="repayment period" required>
+                                <option value="">Please select</option>
+                                <option value="1 year">1 year</option>
+                                <option value="2 years">2 years</option>
+                                <option value="3 years">3 years</option>
+                                <option value="4 years">4 years</option>
+                                <option value="5 years">5 years</option>
+                                <option value="6 years">6 years</option>
+                                <option value="7 years">7 years</option>
+                            </select>
+                        </div>
+                        <!-- loan repayment method dropdown -->
+                        <div>
+                            <label>Loan repayment plan</label>
+                            <select name="Loan repayment method" id="loan repayment method" required>
+                                <option value="">Please select</option>
+                                <option value="fixed term loan">Fixed term loan</option>
+                                <option value="flexible term loan">Flexible term loan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- page 5 of application form -->
+                    <div class="form-five form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Bank details</h2>
+                        <br>
+                        <!-- bank name input -->
+                        <div>
+                            <label>Bank name</label>
+                            <input type="text" placeholder="e.g. First National Bank" id="bankName" name="Bank name"
+                                required>
+                        </div>
+                        <!-- bank account type dropdown -->
+                        <div>
+                            <label>Bank account type</label>
+                            <select name="Bank account type" id="bank account type" required>
+                                <option value="">Please select</option>
+                                <option value="savings account">Savings account</option>
+                                <option value="cheque account">Cheque account</option>
+                            </select>
+                        </div>
+                        <!-- account number input -->
+                        <div>
+                            <label>Account number</label>
+                            <input type="number" placeholder="e.g. 62610784432" id="accountNumber" name="Account number"
+                                required>
+                        </div>
+                        <!-- branch code input -->
+                        <div>
+                            <label>Branch code</label>
+                            <input type="number" placeholder="e.g. 051001" id="branchCode" name="Branch code" required>
+                        </div>
+
+                        <div>
+                            <label>Upload documents</label>
+                            <p>Please upload a <b>bank statement no older than 3 months</b> (pdf) and a <b>proof of
+                                    identification</b> (jpg).</p>
+                        </div>
+
+                        <!-- upload docs -->
+                        <div class="upload-docs">
+
+                            <!-- container for upload - video -->
+
+                            <!-- codingartist source code -->
+                            <input type="file" id="file-input" name="File input" multiple required />
+                            <label for="file-input">
+                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                &nbsp; Choose Files To Upload
+                            </label>
+                            <div id="num-of-files">No Files Chosen</div>
+                            <ul id="files-list"></ul>
+                        </div>
+
+                        <!-- checkboxes -->
+                        <div class="checkbox">
+                            <input type="checkbox" id="TCcheckbox" name="T's & C's checkbox" required>
+                            <label>I accept the Terms and Conditions. <a
+                                    href="https://drive.google.com/file/d/1NgT4VU3VxsNv8e9iT3G5h6OnB71w2WWe/view?usp=sharing">(View
+                                    here)</a></label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="PIcheckbox" name="Personal information checkbox" required>
+                            <label>I give consent to my personal information being shared with selected third parties in
+                                order for them to contact me.</label>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev" disabled>Back</button>
+                        <button type="button" id="btn-next" class="btn-next">Next Step</button>
+                        <button type="submit" class="btn-submit">Submit</button>
+                        <!-- <div class="balance-btnArea">
+                            <label>Balance</label>
+                            <div class="balance-btn">
+                                <label style="color: #087a77;font-weight: 200;" id="balance-label"></label>
+                            </div>
+                        </div> -->
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="inperson bg__blue section__padding">
+        <div class="container">
+            <div class="inperson__content text__center">
+                <p class="para__text">
+                    We also offer in-person applications, which can be done at our office base located at 80 Raapenberg road Mowbray, Cape Town.<br>
+                    For more information and any other questions, visit our <a
+                    href="contact-us.html">Contact Us</a> page.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="div-1"> <!-- footer container -->
+        <div class="div-2"> <!-- everything inside container -->
+            <div class="div-3"> <!-- content -->
+                <div class="div-4"> <!-- social media links and pages -->
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+                        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer" />
+                    <div class="div-5"> <!-- social media links -->
+                        <a href="https://www.facebook.com//New Growth Loans"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com//new.growthloans"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=27817363783"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+
+                    </div>
+                    <div class="div-6"> <!-- pages -->
+                        <div class="div-7">
+                            <a href="about-us-LIAM.html">About Us</a>
+                        </div>
+                        <div class="div-8">
+                            <a href="loan-products.html">Loan Products</a>
+                        </div>
+                        <div class="div-9">
+                            <a href="loan-application.html">Loan Application</a>
+                        </div>
+                        <div class="div-11">
+                            <a
+                                href="https://drive.google.com/file/d/1NgT4VU3VxsNv8e9iT3G5h6OnB71w2WWe/view?usp=sharing">Terms
+                                and Conditions</a>
+                        </div>
+                    </div>
+                    <div class="div-12">
+                        <a href="contact-us.html" class="btn-contact">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-13"></div>
+            <div class="div-14">© 2024 All Rights Reserved</div>
+        </div>
+    </div>
+
+    <script src="loan-application.js"></script>
+
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!--MESSAGE CONTAINER-->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!--MESSAGES-->
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        <div class="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                        </div>
+                        <div id="chatbox" class="chatbox"></div>
+                        <div id="chat-bar-bottom" class="chat-bar-bottom"></div>
+
+                        <!--User Input Box-->
+                        <div class="chat-bar-input-box">
+                            <div class="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #f8f6f6;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div class="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+<script src="static/scripts/chat.js"></script>
+<script src="static/scripts/responses.js"></script>
+
+</body>
+
+</html>

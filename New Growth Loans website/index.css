@@ -1,0 +1,937 @@
+@import url('https:fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  */
+
+:root {
+  --font-base: 'Poppins', sans-serif;
+  --robin-blue-color: #10c9c3;
+  --hover-color: #087a77;
+  --black-color: #141414;
+  --grey-color: #8e8e8e;
+  --white-color: #fff;
+  /* hex codes from ppt */
+  --dark-color: #2C3333;
+  --green-color: #2E4F4F;
+  --teal-color: #0E8388;
+  --light-color: #CBE4DE;
+  --dark-teal: #0a5e64;
+  --gradient-light: linear-gradient(to right, #02a8bb, #00ccaa);
+  --transition: all 300ms ease-in-out;
+  /* LIAM's gradient */
+  /* background: linear-gradient(to right, #02a8bb, #00ccaa); */
+  
+  /* teal color and robin blue gradient */
+  /* background: linear-gradient(to right, #0E8388, #10c9c3); */
+}
+
+/* (reminder of what once was) END OF NAVBAR CSS !!!!!!!!! */
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-family: var(--font-base);
+  color: var(--black-color);
+  /* temporary - ADDED */
+  /* background-color: #c1cbcdba; */
+
+}
+
+/* may have belonged to react index css */
+
+a {
+  color: none;
+  text-decoration: none;
+}
+
+/* ul {
+  list-style-type: none;
+} */
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+input,
+textarea {
+  outline: 0;
+  border: none;
+  resize: none;
+}
+
+/* end of react index css */
+
+/* app css */
+
+.container {
+  max-width: 1177px;
+  /* is this the property that limits the size of the container?*/
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section__padding {
+  padding: 10rem 0;
+}
+
+.flex {
+  /* controls responsiveness despite media query */
+  display: flex;
+}
+
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+/* section */
+.section__title {
+  margin-bottom: 4rem;
+  /* color: var(--black-color); */
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* texts and paras */
+.para__text {
+  line-height: 1.7;
+  font-weight: 300;
+
+  letter-spacing: 1px;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.text__left {
+  text-align: left;
+}
+
+.text__upper {
+  text-transform: uppercase;
+}
+
+.text__cap {
+  text-transform: capitalize;
+}
+
+.text__blue {
+  color: var(--robin-blue-color);
+}
+
+.text__dark {
+  color: var(--black-color);
+}
+
+.text__light {
+  color: var(--white-color) !important;
+}
+
+.text__grey {
+  color: var(--grey-color);
+}
+
+/* fonts */
+.fw__2 {
+  font-weight: 200;
+}
+
+.fw__2 {
+  font-weight: 300;
+}
+
+.fw__2 {
+  font-weight: 400;
+}
+
+.fw__2 {
+  font-weight: 500;
+}
+
+.fw__2 {
+  font-weight: 600;
+}
+
+.fw__2 {
+  font-weight: 700;
+}
+
+.fw__2 {
+  font-weight: 800;
+}
+
+/* bgs and colors */
+.bg__blue {
+  background-color: var(--robin-blue-color);
+}
+
+.bg__dark-teal {
+  /* */
+  background-color: var(--dark-teal);
+}
+
+.bg__dark {
+  background-color: var(--black-color);
+}
+
+.bg__light {
+  background-color: var(--white-color);
+}
+
+.bg__whitesmoke {
+  background-color: var(--whitesmoke-color);
+}
+
+.bg__grey {
+  background-color: var(--grey-color);
+}
+
+/* btns */
+.btn {
+  display: inline-block;
+  min-height: 54px;
+  line-height: 54px;
+  padding: 0 4.7rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn__blue {
+  background-color: var(--robin-blue-color);
+}
+
+.btn__blue:hover {
+  background-color: #0fb9b4;
+}
+
+/* stolen orange button */
+ 
+.orange-btn {
+  display: inline-block;
+  text-decoration: none;
+  min-height: 54px;
+  line-height: 54px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 4.7rem;
+  font-weight: 500;
+  font-size: 1.7rem;
+  background: #fdcb6e;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+  transition: 0.6s;
+  background: linear-gradient(to right, #02a8bb, #00ccaa);
+}
+.orange-btn:hover {
+  background: linear-gradient(36deg, #00ccaa, #02a8bb);
+}
+
+.effect-btn {
+  display: inline-block;
+  text-decoration: none;
+  min-height: 54px;
+  line-height: 54px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 4.7rem;
+  font-weight: 500;
+  font-size: 1.7rem;
+  background: transparent;
+  border-
+}
+
+/* letter spacing */
+.ls__1 {
+  letter-spacing: 1px;
+}
+
+.ls__2 {
+  letter-spacing: 2px;
+}
+
+/* header css */
+
+.header {
+  min-height: 100vh;
+}
+
+.header__content {
+  min-height: calc(100vh - 106px);
+  flex-direction: column;
+}
+
+#nabeel {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.header__title {
+  /* moved separately to the right */
+  font-size: 4.1rem;
+  line-height: 1.2;
+}
+
+.header__content .para__text {
+  /* moved separately to the right */
+  padding: 3.6rem 0;
+  max-width: 600px;
+}
+
+
+
+@media(min-width: 953px) {
+  .header__content {
+    flex-direction: row;
+  }
+
+  .header__content--right {
+    text-align: left;
+    width: 100%;
+  }
+
+  .header__content--left {
+    width: 50%;
+  }
+
+  .header__content--right .para__text {
+    margin-left: 0;
+  }
+
+}
+
+@media(min-width: 858px) and (max-width: 952px) {
+
+  /* ADDED - issue with having this is that margin to screen is bigger than when resizing to bigger screen e.g. big to small to big */
+  .header__content {
+    flex-direction: row;
+  }
+
+  .header__content--right {
+    text-align: left;
+    width: 100%;
+  }
+
+  .header__content--left {
+    width: 50%;
+  }
+
+  .header__content--right .para__text {
+    margin-left: 0;
+  }
+
+}
+
+
+
+/* intro section css - departs from root styling - applies to mission and vision */
+
+.logo {
+  padding: 2rem 0;
+}
+
+.logo__content img {
+  /* changes logo size to be small as 'img' in root is set to 100 */
+  margin: 4rem auto 0 auto;
+  width: 260px;
+}
+
+.intro__content img {
+  /* changes logo size to be small as 'img' in root is set to 100 */
+  margin: 4rem auto 0 auto;
+  width: 260px;
+}
+
+.intro__content p.para__text {
+  /* centers text so it doesn't reach sides of screen */
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+/* added this to depart from initial section__title styling which has black font colour */
+.intro__content .section__title {
+  color: var(--robin-blue-color);
+}
+
+/* CARD CSS - image part */
+
+.key-container {
+  padding: 40px;
+}
+
+
+.card-image {
+  /* position: relative; */
+  height: 100px;
+  width: 100px;
+}
+
+.card-image .card-img {
+  /* class of img src itself */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 20px;
+  /* background: linear-gradient(270deg, #60b848 1.64%, #009677 98.36%); */
+  background: linear-gradient(to right, hsl(186, 98%, 37%), hsl(170, 100%, 40%));
+  /* background: linear-gradient(to right, #0E8388, #10c9c3); matches teal color and robin blue */
+}
+
+.card-image .card-img-hover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 20px;
+  background: var(--gradient-light);
+  display: none;
+}
+
+.bottom-content {
+  display: flex;           /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 40px;
+  width: 100%;             /* Ensure it takes full width of its container */
+}
+
+
+
+.bottom-content .arrow-icon {
+  height: 100%;
+  width: auto;
+}
+/* ADDED for icon hover change to white icon?? */
+.bottom-content .arrow-icon-hover {
+  height: 100%;
+  width: auto;
+  display: none;
+}
+
+.image-content,
+.card-content {
+  align-content: center;
+  /* use below code if you remove '~' ADDED properties */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  row-gap: 5px;
+}
+
+/* created NEW to apply to each card */
+.card__title {
+  color: var(--robin-blue-color);
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card__description {
+  color: var(--grey-color);
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ADDED to set card items in a row */
+.card-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  column-gap: 20px;
+  align-items: start;
+}
+
+/* CARD CSS - text part */
+
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background-color: var(--white-color);
+  padding: 18px;
+
+  /* button 'more info' considered text */
+  text-align: center;
+  /* values specifify shadow col using rgba values; these equal grey */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  /* makes hover animation smooth */
+  transition: background-color 0.4s, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  /* transition: background-color 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); */  
+
+   /* transition: background-image 0.7s; */
+}
+
+.card:hover {
+  background-color: var(--black-color);
+  transform: scale(1.05);
+
+  /* background-image: linear-gradient(to right, #02a8bb, #00ccaa); */
+}
+.card:hover .card__title {
+  /* color: var(--white-color); */
+  color: var(--teal-color);
+}
+.card:hover .card__description {
+  /* changes p text */
+  color: var(--light-color);
+}
+
+/* to change to inverse icon */
+/* .card:hover .card-image .card-img-hover {
+  display: block;
+  transition: 0.5s;
+} */
+.card:hover .bottom-content .arrow-icon-hover {
+  display: block;
+}
+/* .card:hover .card-image .card-img {
+  display: none;
+} */
+.card:hover .bottom-content .arrow-icon {
+  display: none;
+}
+
+/* ADDED CARD LINK CSS - NEEDED TO DIFFER FROM LINK STYLING IN B=NAVBAR CSS */
+
+.card-link {
+  text-decoration: none;
+  /* Remove default link underline */
+  color: inherit;
+  /* Inherit text color */
+}
+
+.card-link:hover {
+  background-color: transparent;
+  /* Remove background color on hover */
+}
+
+.card-link:focus {
+  outline: none;
+  /* Remove focus outline */
+}
+
+/* Increase specificity to override other link styles */
+.card-link.nav-link {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1175px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+
+/* class is from video but property is own */
+.button {
+  /* targets button class */
+  padding: 10px;
+}
+
+/* ADDED OWN to divest from og 'react' button */
+.card-content button {
+  /* targets button tag */
+  color: var(--white-color);
+  background-color: var(--robin-blue-color);
+  font-family: inherit;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  /* ADDED FROM VIDEO */
+  border-radius: 6px;
+  margin: 14px;
+}
+
+.readmore-container {
+  /* margin-top: 12rem; */
+  text-align: center;
+  padding-top: 5rem;
+}
+/* UNDERLINE LINK (vs button link) */
+/* departed link a { styling for key benefits 'read more' */
+.key-offer-link {
+  color: var(--robin-blue-color);
+  text-decoration: underline;
+ /* padding-top: 20px; */
+}
+/* styling to override NAVBAR a hover style */
+.key-offer-link:hover{
+  color: var(--teal-color);
+  background: none;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+/* STEPS TO APPLY */
+
+/* .stats__content {
+  gap: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} */
+
+/* STEPS TO APPLY - ADDED */
+.stats__content {
+  counter-reset: steps-counter;
+}
+
+/* .stats__item--left .img {
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+} */
+
+.stats__item {
+  /* position: relative; */
+  counter-increment: steps-counter;
+}
+
+span .description {
+  justify-content: center;
+}
+
+.stats__item ::before {
+  content: counter(steps-counter);
+  /* counter-increment: steps-counter; */
+  /* position: absolute; */
+  display: block;
+  justify-content: center;
+  left: -3em;
+  /* top: -.5em; */
+  background: var(--white-color);
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--grey-color);
+  color: var(--grey-color);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  
+}
+
+.stats__item--text .description {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.stats__item--left .img,
+.stats__item--text .img {
+  /* Adjust the size of your icons here */
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+/* STEPS TO APPLY - own code from KP using counters */
+
+@media screen and (min-width: 768px) {
+  .stats__content {
+      gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .stats__item {
+      text-align: left;
+      align-items: center;
+      display: flex;
+  }
+
+  .stats__item .img {
+      margin-bottom: 0;
+      margin-right: 2rem;
+      width: 40px;
+  }
+}
+
+
+/* BENEFITS - departs from og styles */
+
+.service h2 {
+  margin-bottom: rem; /* changed from 4 */
+  color: var(--light-color);
+  font-weight: 600;
+  font-size: 2.4rem; /* changed from 4 */
+  text-align: left;
+}
+
+.service p.para__text{
+  line-height: 1.7;
+  font-weight: 300;
+  font-size: 1.4rem; /* added 4 */
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensure equal spacing between items */
+
+  width: calc(50% - 30px);
+}
+
+.benefits__inner { /* ensures info shows up next to e/o */
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.service { /* makes benefits display as 4 parts */
+  width: calc(50% - 15px); /* Adjust width to fit two items per row with spacing */
+  margin-bottom: 30px;
+}
+
+.benefits__image {
+  width: 500px; /* Adjust as needed */
+  padding-left: 50px; /* Adjust padding as needed */
+  margin-left: 90px;
+}
+
+@media (max-width: 858px) {
+  .benefits__inner {
+    flex-direction: column; /* Stack the content in a column */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .row {
+    width: 100%; /* Ensure the row takes the full width */
+    display: flex;
+    flex-direction: column; /* Stack the services in a column */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .service {
+    width: 100%; /* Make each service take full width */
+    margin-bottom: 20px; /* Add space between services */
+  }
+
+  .benefits__image {
+    width: 100%; /* Make the image take full width */
+    padding-left: 0; /* Remove left padding */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 30px; /* Add some top margin to separate from the services */
+    order: 1; /* Move the image to the last position */
+  }
+}
+
+
+
+/* Footer */
+
+.div-1 {
+  background-color: var(--black-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 60px 21px;
+}
+
+@media (max-width: 991px) {
+  .div-1 {
+    padding: 0 20px;
+  }
+}
+
+.div-2 {
+  display: flex;
+  width: 100%;
+  max-width: 1203px;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .div-2 {
+    max-width: 100%;
+    margin-top: 5%;
+    /* ADDED */
+  }
+}
+
+.div-3 {
+  align-self: center;
+  display: flex;
+  width: 640px;
+  max-width: 100%;
+  align-items: flex-start;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .div-3 {
+    margin-right: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+.div-4 {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-5 {
+  align-self: center;
+  display: flex;
+  gap: 16px;
+}
+
+.div-5 .img {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 24px;
+  filter: drop-shadow(0px 8px 24px rgba(24, 39, 75, 0.08)) drop-shadow(0px 6px 12px rgba(24, 39, 75, 0.12));
+}
+
+.div-6 {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  font-size: 16px;
+  color: var(--Cold-Grey-white, #fff);
+  font-weight: 400;
+  white-space: nowrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .div-6 {
+    white-space: initial;
+  }
+}
+
+.div-6>* {
+  letter-spacing: 1px;
+}
+
+.div-12 {
+  display: flex;
+  justify-content: center;
+}
+
+.div-12 .btn {
+  justify-content: center;
+  border-radius: 30px;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: #fff;
+  align-self: end;
+  margin-top: 49px;
+  color: #000;
+  text-align: center;
+  padding: 1px 26px;
+
+  text-transform: none;
+}
+
+@media (max-width: 991px) {
+  .div-12 {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+.div-13 {
+  border-color: rgba(255, 255, 255, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: #fff;
+  margin-top: 76px;
+  height: 1px;
+}
+
+@media (max-width: 991px) {
+  .div-13 {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.div-14 {
+  color: var(--Cold-Grey-white, #fff);
+  align-self: center;
+  margin-top: 35px;
+  font: 300 12px Roboto, sans-serif;
+}
+/* to change social media a class */
+.div-5 a {
+  color: #fff;
+}
+.div-5 a:hover {
+  color: var(--robin-blue-color);
+  background: none;
+  /* transition: .5s; */
+}
+/* to change footer page links */
+.div-6 a {
+  color: var(--Cold-Grey-white, #fff);
+}
+.div-6 a:hover {
+  color: var(--robin-blue-color);
+  background: none;
+  /* transition: .5s; */
+}

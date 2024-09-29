@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="loan-products.css">
+  <!-- for icon in navbar-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="navbar.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+
+
+  <title>New Growth Loans | Loan Products</title>
+</head>
+<header>
+  <nav>
+    <!-- ADD THIS WHEN LOGO BECOMES IMAGE (so that you can remove the home page in the navbar and replace with forgotten link since it will be difficult to add another menu item and maintain the styling) 
+    <a href="index.html" class="navbar__brand">
+      <img src="/logo.png" alt="site logo" /></a>
+    -->
+    <input type="checkbox" id="check"> <!-- makes it openable-->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">New Growth Loans</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="loan-products.html">Loans</a></li>
+      <li><a href="loan-application.html">Apply</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
+
+  <!-- hero for LP page - takes from 'mission' class on index page -->
+  <div class="lp-intro">
+    <div class="container">
+      <div class="intro__content text__center">
+        <h2 class="section__title">
+          Don't Let Financial Burdens <br>
+          Keep You Down. <br>
+          Get A Loan Today!
+        </h2>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="products__container section__padding">
+    <!-- medical emergency -->
+    <div class="products__card">
+      <div class="card-content">
+        <h3 class="product-card-title">Medical Emergency</h3>
+        <div class="title title-gradient--product"></div>
+        <div class="overlay">
+          <p class="card__description">Medical emergencies happen, and they are unfortunately not something we can plan
+            for and when the need
+            occurs
+            you need immediate support.</p>
+        </div>
+        <!-- <p> Get up to R300 000 at an interest rate of 18%</p> -->
+        <div class="row">
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title--currency">R</span>
+            <span class="title title-initial title-number">25 000</span>
+            <p class="title title-notes">Minimum monthly income</p>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title--currency">R</span>
+            <span class="title title-initial title-number">300 000</span>
+            <span class=" title title-inital asterisk">*</span>
+            <div class="title title-notes">Maximum loan amount</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title-number">12-84</span>
+            <div class="title title-notes">Monthly repayment options</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title-number">18</span>
+            <span class="title title-initial percentage">%</span>
+            <div class="title title-notes">Fixed interest rate</div>
+          </div>
+
+        </div>
+        <!-- <a href="loan-application.html" class="btn">Apply Now</a> -->
+        <!-- <a href="" class="btn">Read More</a> -->
+
+        <!-- modal details integration -->
+        <details>
+          <summary>
+            <div class="button-container">
+              <a href="loan-application.html" class="btn">Apply Now</a>
+            <div class="rm-btn">
+              Read More
+            </div>
+            </div>
+            <div class="details-modal-overlay"></div>
+          </summary>
+          <div class="details-modal">
+            <div class="details-modal-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z" fill="black" />
+              </svg>
+            </div>
+            <div class="details-modal-title">
+              <h1>My details modal</h1>
+            </div>
+            <div class="details-modal-content">
+              <p>
+                You can click the X in the corner or click the overlay to close this modal.
+                Something like this could be useful as a nice way to show additional information,
+                but that's about as far as I would take it. It's just a nice way of styling the details element.
+              </p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- wedding loan -->
+    <div class="products__card">
+      <div class="card-content">
+        <h3 class="product-card-title">Wedding Loan</h3>
+        <div class="title title-gradient--product"></div>
+        <div class="overlay">
+          <p class="card__description">Why wait For Your Dream Wedding? Get A Loan Now, Make Your Dream Come True!</p>
+        </div>
+        <div class="row">
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title--currency">R</span>
+            <span class="title title-initial title-number">15 000</span>
+            <div class="title title-notes">Minimum monthly income</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title--currency">R</span>
+            <span class="title title-initial title-number">200 000</span>
+            <span class=" title title-inital asterisk">*</span>
+            <div class="title title-notes">Maximum loan amount</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title-number">12-84</span>
+            <div class="title title-notes">Monthly repayment options</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title-number">18</span>
+            <span class="title title-initial percentage">%</span>
+            <div class="title title-notes">Fixed interest rate</div>
+          </div>
+        </div>
+        <!-- <a href="loan-application.html" class="btn">Apply Now</a>
+        <a href="" class="btn">Read More</a> -->
+
+        <!-- modal details integration -->
+        <details>
+          <summary>
+            <div class="button-container">
+              <a href="loan-application.html" class="btn">Apply Now</a>
+            <div class="rm-btn">
+              Read More
+            </div>
+            </div>
+            <div class="details-modal-overlay"></div>
+          </summary>
+          <div class="details-modal">
+            <div class="details-modal-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z" fill="black" />
+              </svg>
+            </div>
+            <div class="details-modal-title">
+              <h1>My details modal</h1>
+            </div>
+            <div class="details-modal-content">
+              <p>
+                You can click the X in the corner or click the overlay to close this modal.
+                Something like this could be useful as a nice way to show additional information,
+                but that's about as far as I would take it. It's just a nice way of styling the details element.
+              </p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- car and maintenance -->
+    <div class="products__card">
+      <div class="card-content">
+        <h3 class="product-card-title">Car Repairs and Maintenance</h3>
+        <div class="title title-gradient--product"></div>
+        <div class="overlay">
+          <p class="card__description">Need Repairs? The Car Emergency Package Has Got You Covered.</p>
+        </div>
+        <div class="row">
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title--currency">R</span>
+            <span class="title title-initial title-number">10 000</span>
+            <div class="title title-notes">Minimum monthly income</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title--currency">R</span>
+            <span class="title title-initial title-number">150 000</span>
+            <span class=" title title-inital asterisk">*</span>
+            <div class="title title-notes">Maximum loan amount</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title-number">12-84</span>
+            <div class="title title-notes">Monthly repayment options</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title-number">18</span>
+            <span class="title title-initial percentage">%</span>
+            <div class="title title-notes">Fixed interest rate</div>
+          </div>
+        </div>
+        <!-- <a href="loan-application.html" class="btn">Apply Now</a>
+        <a href="" class="btn">Read More</a> -->
+
+          <!-- modal details integration -->
+        <details>
+          <summary>
+            <div class="button-container">
+              <a href="loan-application.html" class="btn">Apply Now</a>
+            <div class="rm-btn">
+              Read More
+            </div>
+            </div>
+            <div class="details-modal-overlay"></div>
+          </summary>
+          <div class="details-modal">
+            <div class="details-modal-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z" fill="black" />
+              </svg>
+            </div>
+            <div class="details-modal-title">
+              <h1>My details modal</h1>
+            </div>
+            <div class="details-modal-content">
+              <p>
+                You can click the X in the corner or click the overlay to close this modal.
+                Something like this could be useful as a nice way to show additional information,
+                but that's about as far as I would take it. It's just a nice way of styling the details element.
+              </p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- travel and leisure -->
+    <div class="products__card">
+      <div class="card-content">
+        <h3 class="product-card-title">Travel and Leisure</h3>
+        <div class="title title-gradient--product"></div>
+        <div class="overlay">
+          <p class="card__description">See The World! Get a Travel and Leisure Loan Today!</p><br>
+          <p class="card__description">Travel the world! Get the funds you need for your family vacation.</p>
+        </div>
+        <div class="row">
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title--currency">R</span>
+            <span class="title title-initial title-number">10 000</span>
+            <div class="title title-notes">Minimum monthly income</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title--currency">R</span>
+            <span class="title title-initial title-number">100 000</span>
+            <span class="title title-inital asterisk">*</span>
+            <div class="title title-notes">Maximum loan amount</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title-number">12-84</span>
+            <div class="title title-notes">Monthly repayment options</div>
+          </div>
+          <div class="product-card-price col-6 col-xs-6 col-sm-6">
+            <span class="title title-initial title-number">18</span>
+            <span class="title title-initial percentage">%</span>
+            <div class="title title-notes">Fixed interest rate</div>
+          </div>
+        </div>
+        <!-- <a href="loan-application.html" class="btn">Apply Now</a>
+        <a href="" class="btn">Read More</a> -->
+
+        <!-- modal details integration -->
+        <details>
+          <summary>
+            <div class="button-container">
+              <a href="loan-application.html" class="btn">Apply Now</a>
+            <div class="rm-btn">
+              Read More
+            </div>
+            </div>
+            <div class="details-modal-overlay"></div>
+          </summary>
+          <div class="details-modal">
+            <div class="details-modal-close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z" fill="black" />
+              </svg>
+            </div>
+            <div class="details-modal-title">
+              <h1>My details modal</h1>
+            </div>
+            <div class="details-modal-content">
+              <p>
+                You can click the X in the corner or click the overlay to close this modal.
+                Something like this could be useful as a nice way to show additional information,
+                but that's about as far as I would take it. It's just a nice way of styling the details element.
+              </p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <div class="comparison-container bg__dark-teal">
+    <div class="pricing-box">
+      <h3 class="section__title"> The Right Plan For You</h3>
+      <p>We have two camparable loan term plans. Find what works best for you</p>
+      <div class="pricing-card-box">
+        <div class="card">
+          <div class="pricing-card">
+            <div class="pad-box">
+              <h3>Fixed Loan Term</h3>
+              <div class="list-box">
+                <div class="list"><img src="icons/check.png" class="icon" alt="">Fixed interest loan</div>
+                <div class="list"><img src="icons/check.png" class="icon" alt="">No Credit Check Required</div>
+                <div class="list"><img src="icons/check.png" class="icon" alt="">Money within 5-7 days</div>
+                <div class="list"><img src="icons/check.png" class="icon" alt=""></div>
+              </div>
+              <div class="price"><small>R</small><small>/month</small> <small>* 18%</small></div>
+              <button>Choose Plan</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="pricing-card">
+            <div class="pad-box">
+              <h3>Flexible Loan</h3>
+              <div class="list-box">
+                <div class="list"><img src="icons/check.png" class="icon" alt="">Repayment Term Negotiable</div>
+                <div class="list"><img src="icons/check.png" class="icon" alt="">Subject To Credit Check</div>
+                <div class="list"><img src="icons/check.png" class="icon" alt="">Money Within 7-14 days</div>
+                <div class="list"><img src="icons/check.png" class="icon" alt="">Lower Term Incurs Higher Interest Rate
+                </div>
+              </div>
+              <div class="price"><small>R</small><small>/month</small> <small>Personalized</small></div>
+              <button>Choose Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Loan Calculator -->
+  <div class="calculator">
+    <div class="container">
+      <div class="calculator__content">
+        <h2 class="section__title text__blue">Loan Calculator</h2>
+        <div class="calculator-container">
+          <div class="input-wrapper">
+              <div class="wrapper">
+                  <label for="principal">Amount to borrow (R):</label>
+                  <input type="number" id="principal" value="1000"/>
+              </div>
+              <div class="wrapper">
+                  <label for="rate">Rate:</label>
+                  <input type="number" id="rate" value="5"/>
+              </div>
+          </div>
+          <label for="time">Time:</label>
+          <div class="time-wrapper">
+              <input type="number" id="time" value="1" />
+              <select name="duration" id="duration">
+                  <option value="year">Year</option>
+                  <option value="month">Month</option>
+              </select>
+          </div>
+          <button id="calculate-btn">Calculate</button>
+          <div id="result"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-container">
+    <div class="card-container">
+      <div class="post">
+          <div class="header_post">
+              <img src="https://images.pexels.com/photos/2529973/pexels-photo-2529973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+          </div>
+  
+          <div class="body_post">
+              <div class="post_content">
+  
+                  <h1>Lorem Ipsum</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi assumenda cumque deserunt
+                      dolorum ex exercitationem.</p>
+  
+                  <div class="container_infos">
+                      <div class="postedBy">
+                          <span>author</span>
+                          John Doe
+                      </div>
+  
+                      <div class="container_tags">
+                          <span>tags</span>
+                          <div class="tags">
+                              <ul>
+                                  <li>design</li>
+                                  <li>front end</li>
+                              </ul>
+                          </div>
+  
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+  <a href="https://youtu.be/Izm8SutcQv4" target="_blank"><footer>
+      <div class="texto">
+          <span>
+              <i class="fab fa-youtube"></i>
+               watch on youtube</span>
+      </div>
+  </footer>
+     </a>
+  </div>
+
+        <!-- Script   -->
+        <script src="calculator-script.js"></script>
+        <script src="details-modal-scroll.js"></script>
+</body>
+
+</html>
